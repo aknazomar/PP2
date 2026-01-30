@@ -18,3 +18,8 @@ print(z)
 print(type(x))
 print(type(y))
 print(type(z))
+
+
+#inporting numbers
+import random
+print(random.randrange(1,10))
