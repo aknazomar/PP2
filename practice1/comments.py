@@ -1,3 +1,9 @@
 #this is called comments 
+
 #bye 
-#how to code AAAGHAGAHGAHGAG
+
+#the third comment
+
+# the 4th comment
+
+# the 5th comment

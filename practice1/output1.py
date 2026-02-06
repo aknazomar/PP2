@@ -1,3 +1,5 @@
 print("Hello World!", end=" ")
 print("I will print on the same line.")
 print("I am", 35, "years old.")
+print("i understand that this file contains same information as hello.py")
+print('okay, let it be', 45689, 'added some numbers')
