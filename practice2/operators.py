@@ -1,3 +1,4 @@
+#they are not required, but I didn't know
 #1 example
 a = int(input())
 b = int(input())
