@@ -10,5 +10,5 @@ class Circle:
 
 r = int(input())
 
-c = circle(r)
-print(f"{c.area():.ef}")
+c = Circle(r)
+print(f"{c.area():.2f}")

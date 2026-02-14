@@ -16,7 +16,7 @@ class Point:
         return math.sqrt((self.x - other_point.x) ** 2 + (self.y - other_point.y) ** 2)
 
 
-x1.y1 = map(int, input().split())
+x1, y1 = map(int, input().split())
 x2, y2 = map(int, input().split())
 x3, y3 = map(int, input().split())
 

@@ -1,6 +1,6 @@
 class StringHandler:
     def getString(self):
-        print(self.s.upper())
+        self.s = input()
 
     def printString(self):
         print(self.s.upper())

@@ -7,7 +7,7 @@ class Square(Shape):
         self.length = length
 
     def area(self):
-        return sself.length * self.length
+        return self.length * self.length
 
 
 n = int(input())
