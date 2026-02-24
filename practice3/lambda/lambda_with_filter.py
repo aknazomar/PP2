@@ -9,3 +9,11 @@ long_names = list(filter(lambda x: len(x) > 4, names))
 print(long_names)
 
 # 3
+counries = ["China", "America", "France", "South Korea", "Russia", "Kazakhstan", "Japan", "Turkey"]
+series_i_love_from_countries_above = list(filter(lambda x: len(x) > 6, counries)) #joke, don't believe that shit
+print(series_i_love_from_countries_above)
+
+# 4
+m = list(map(int, input("Enter the numbers, pls: ").split()))
+mn = list(filter(lambda x: x > 2, m))
+print(mn)
