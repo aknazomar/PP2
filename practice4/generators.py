@@ -2,8 +2,7 @@
 def generate_squares(N):
     for i in range(1, N+1):
         yield i * i
-
-# Example usage
+        
 for square in generate_squares(5):
     print(square)
 
@@ -37,12 +36,12 @@ def squares(a, b):
     for i in range(a, b+1):
         yield i * i
 
-# Test with a for loop
 for val in squares(3, 7):
     print(val)
 
 
-# 5 def squares(a, b):
+# 5 
+def squares(a, b):
     for i in range(a, b+1):
         yield i * i
 
