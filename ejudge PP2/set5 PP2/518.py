@@ -1,5 +1,7 @@
 import re
-n = input()
-patt = r'\d{2}/\d{2}/\d{4}'
-s = re.findall(patt, n)
+
+user_input = input()
+nex = input()
+escaped_input = re.escape(nex)
+s = re.findall(escaped_input, user_input)
 print(len(s))

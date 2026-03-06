@@ -1,7 +1,5 @@
 import re
 n = input()
-patt = r'^\d+$'
-patt = re.compile(pattern=patt)
-s = re.search(patt, n)
-if s: print("Match")
-else: print("No match")
+patt = r'Name: (\D+), Age: (\d+)'
+mat = re.search(patt, n)
+if mat: print(mat.group(1), mat.group(2))

@@ -1,5 +1,6 @@
 import re
-n = input()
-patt = r'\d{2}/\d{2}/\d{4}'
-s = re.findall(patt, n)
+user_input = input()
+pattern = r'\w+'
+pattern = re.compile(pattern=pattern)
+s = re.findall(pattern, user_input)
 print(len(s))

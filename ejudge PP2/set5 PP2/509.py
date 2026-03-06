@@ -1,8 +1,4 @@
 import re
-n = input()
-m = input()
-result = re.split(m, n)
-
-for i in range(len(result)):
-    if i != 0: print(",", end="")
-    print(result[i],end="")
+n = input().strip()
+r = re.findall(r'\b[a-zA-Z]{3}\b', n)
+print(len(r))
