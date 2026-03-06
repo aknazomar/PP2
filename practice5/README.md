@@ -4,4 +4,3 @@ Practice5/
 ├── raw.txt
 └── README.md
 ```
-Practice 5
