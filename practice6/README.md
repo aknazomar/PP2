@@ -1,5 +1,7 @@
 Represitory structure:
-<!-- Practice6/
+
+```
+Practice6/
 ├── file_handling/
 │   ├── read_files.py
 │   ├── write_files.py
@@ -10,4 +12,5 @@ Represitory structure:
 ├── builtin_functions/
 │   ├── map_filter_reduce.py
 │   └── enumerate_zip_examples.py
-└── README.md -->
+└── README.md ```
+```
