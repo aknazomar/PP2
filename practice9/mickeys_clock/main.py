@@ -50,7 +50,7 @@ while running:
     minutes = t.tm_min
 
     # Углы (вычитаем 90, если стрелка в исходном файле смотрит ВПРАВО)
-    # Если стрелка в файле смотрит ВВЕРХ, оставляем так:
+    # Если стрелка в файле смотрит вверх, оставляем так:
     sec_angle = seconds * 6
     min_angle = minutes * 6
 
@@ -61,7 +61,7 @@ while running:
     img_m, rect_m = rotate_hand(hand_min, min_angle, 0.22, center)
     screen.blit(img_m, rect_m)
 
-    img_s, rect_s = rotate_hand(hand_sec, sec_angle, 0.27, center)
+    img_s, rect_s = rotate_hand(hand_sec, sec_angle, 0.25, center)
     screen.blit(img_s, rect_s)
 
     pygame.display.flip()
