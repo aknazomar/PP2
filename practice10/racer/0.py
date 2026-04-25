@@ -5,33 +5,17 @@ import os
 
 pygame.init()
 
-# Параметры окна
 WIDTH, HEIGHT = 400, 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 
-# --- УМНЫЙ ПОИСК ПУТИ ---
+# finding the way to the folder "resources"
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
-
-# Проверяем все возможные варианты названия папки (английская c, русская с, s вместо c)
-possible_folders = ["resources", "resourses", "resourсes"]
-RES_PATH = None
-
-for folder in possible_folders:
-    temp_path = os.path.join(BASE_PATH, folder)
-    if os.path.exists(temp_path):
-        RES_PATH = temp_path
-        break
-
-# Если папку не нашли, будем искать файлы прямо в корне рядом с 0.py
-if not RES_PATH:
-    RES_PATH = BASE_PATH
-
-print(f"Использую папку ресурсов: {RES_PATH}")
+RES_PATH = os.path.join(BASE_PATH, "resources")
 
 def get_path(filename):
     return os.path.join(RES_PATH, filename)
 
-# Загрузка ресурсов
+# downloading resources 
 try:
     image_background = pygame.image.load(get_path('road.png'))
     image_player = pygame.image.load(get_path('Player.png'))
@@ -41,11 +25,10 @@ try:
     pygame.mixer.music.load(get_path('background.wav'))
     sound_crash = pygame.mixer.Sound(get_path('crash.wav'))
 except Exception as e:
-    print(f"Ошибка: не удалось найти файл! Проверь названия. {e}")
+    print(f"Error: couldn't find the folder 'resources'! {e}")
     pygame.quit()
     exit()
 
-# Шрифты
 font = pygame.font.SysFont("Verdana", 60)
 font_small = pygame.font.SysFont("Verdana", 20)
 
@@ -86,7 +69,7 @@ class Coin(pygame.sprite.Sprite):
         self.rect.move_ip(0, 5)
         if self.rect.top > HEIGHT: self.reset()
 
-# Инициализация объектов
+# initialization of the objects 
 player = Player()
 enemy = Enemy()
 coin = Coin()
