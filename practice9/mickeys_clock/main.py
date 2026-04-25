@@ -23,7 +23,6 @@ def load_image(name):
     return pygame.image.load(path).convert_alpha()
 
 # Загрузка (имена файлов должны быть как в Шаге 1)
-# ВНИМАНИЕ: Если board у тебя все-таки .jpg, поменяй тут расширение
 bg = load_image('board.png') 
 hand_min = load_image('righthand.png') # Правая рука - минуты
 hand_sec = load_image('lefthand.png')  # Левая рука - секунды
@@ -44,8 +43,7 @@ while running:
 
     # Логика времени
     t = time.localtime()
-    # Для секунд используем time.time() для плавности, если нужно
-    # Но по заданию обычно достаточно секундной точности:
+    # Для секунд используем time.time() для плавности
     seconds = t.tm_sec
     minutes = t.tm_min
 
