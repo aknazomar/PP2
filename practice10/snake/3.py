@@ -163,22 +163,3 @@ Level: {level}"""
     clock.tick(FPS + level)
 
 pygame.quit()
-
-'''
-#
-# # #
-
------
-
-#
-#
-# #
-
------
-
-#
-#
-#
-#
-
-'''
